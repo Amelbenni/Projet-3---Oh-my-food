@@ -1,3 +1,20 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.header {
+  border-bottom: 1px solid #ced4da;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.header__logo {
+  width: 60%;
+  height: 60%;
+}
 
 /*# sourceMappingURL=style.css.map */
