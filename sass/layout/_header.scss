@@ -1,0 +1,11 @@
+.header {
+    border-bottom: 1px solid #ced4da ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    &__logo {
+        width: 60%;
+        height: 60%;
+    }
+}
