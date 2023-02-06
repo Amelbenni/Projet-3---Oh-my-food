@@ -1,0 +1,31 @@
+.footer {
+    background-color: #343a40;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+    & img {
+        width: 30%;
+    }
+
+    &__link {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        &__item {
+            padding: 5px 0;
+
+            & a {
+                color: $text-footer-color;
+                text-decoration: none;
+                font-family: $main-font;
+            }
+
+            & i {
+                width: 7%;
+            }
+        }
+    }
+}
