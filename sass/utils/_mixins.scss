@@ -1,0 +1,79 @@
+@mixin button {
+    border-radius: 30px;
+    width: 75%;
+    padding: 15px;
+    font-family: $main-font;
+    font-size: 17px;
+    border: none;
+    color: white;
+    background: rgb(255,121,218);
+    background: linear-gradient(169deg, rgba(255,121,218,1) 29%, rgba(147,86,220,1) 76%);
+}
+
+@mixin h2 {
+    font-family: $main-font;
+    font-size: $font-size-title;
+    font-weight: $font-weight-title;
+}
+
+@mixin step-number {
+    background: #9356DC;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: $main-font;
+    padding: 2px;
+    position: relative;
+    left: 10px;
+}
+
+@mixin step-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    margin-bottom: 20px;
+    width: 90%;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #F7F7F7;
+}
+
+@mixin restaurant-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+@mixin restaurant-card {
+    border: 1px solid #cecece;
+    box-shadow: rgb(0 0 0 / 13%) 0px 3px 8px;
+    border-radius: 20px;
+}
+
+@mixin restaurant-img {
+    border-radius: 20px 20px 0px 0px;
+    height: 190px;
+    object-fit: cover;
+}
+
+@mixin new-restaurant {
+    position: absolute;
+    right: 37px;
+    margin: 10px 5px;
+    background-color: #99E2D0;
+    color: #008766;
+    font-family: $main-font;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px;
+}

@@ -1,0 +1,47 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $main-font;
+    background-color: #F7F7F7;
+
+    &__research {
+        display: flex;
+        justify-content: center;
+        background-color: #EAEAEA;
+        width: 90%;
+        padding: 20px;
+
+        & i {
+            padding: 0 10px;
+            font-size: 20px;
+        }
+
+    &--input {
+        border: none;
+        background-color: #EAEAEA;
+        width: 50%;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &--input:focus {
+            outline: none;
+    }
+    }
+
+    &__title {
+        width: 80%;
+        text-align: center;
+
+    & h2 {
+        @include h2;
+        margin: 40px 40px 0 40px;
+    }
+
+    & p {
+        font-size: 17px;
+    font-weight: 100;
+    }
+    }
+}
