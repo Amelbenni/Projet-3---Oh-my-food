@@ -96,6 +96,7 @@ body {
 @media screen and (min-width: 767px) {
   .header__links img {
     padding-left: 133px;
+    width: 30%;
   }
   .form-menu__order {
     width: 25%;
@@ -147,11 +148,11 @@ body {
   display: flex;
   justify-content: center;
   background-color: #EAEAEA;
-  width: 90%;
-  padding: 20px;
+  width: 100%;
+  padding: 20px 0;
 }
 .form__research i {
-  padding: 0 10px;
+  padding: 0 25px;
   font-size: 20px;
 }
 .form__research--input {
@@ -186,9 +187,6 @@ body {
 }
 
 @media screen and (min-width: 767px) {
-  .form__research {
-    width: 100%;
-  }
   .form__research--input {
     width: 20%;
   }

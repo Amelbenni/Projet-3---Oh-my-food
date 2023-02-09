@@ -9,11 +9,11 @@
         display: flex;
         justify-content: center;
         background-color: #EAEAEA;
-        width: 90%;
-        padding: 20px;
+        width: 100%;
+    padding: 20px 0;
 
         & i {
-            padding: 0 10px;
+            padding: 0 25px;
             font-size: 20px;
         }
 
@@ -53,12 +53,8 @@
 }
 
 @media screen and (min-width: map-get($breakpoints, tablette)) {
-    .form__research {
-        width: 100%;
-
-        &--input {
+    .form__research--input {
             width: 20%;
-        }
     }
 
     .form__title--submit {
