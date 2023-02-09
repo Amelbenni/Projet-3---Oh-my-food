@@ -1,6 +1,7 @@
 //Utils
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/maps";
 
 //Base
 @import "./base/reset";
@@ -8,6 +9,7 @@
 
 //Composants
 @import "./composants/buttons";
+@import "./composants/cards";
 
 //Layout
 @import "./layout/header";
@@ -16,3 +18,4 @@
 
 //Pages
 @import "./pages/home";
+@import "./pages/page-1.scss";
