@@ -13,6 +13,7 @@ body {
   font-size: 17px;
   border: none;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 3px 8px;
   background: rgb(255, 121, 218);
   background: linear-gradient(169deg, rgb(255, 121, 218) 29%, rgb(147, 86, 220) 76%);
   margin: 15px 0 60px 0;
@@ -26,6 +27,7 @@ body {
   font-size: 17px;
   border: none;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 3px 8px;
   background: rgb(255, 121, 218);
   background: linear-gradient(169deg, rgb(255, 121, 218) 29%, rgb(147, 86, 220) 76%);
   width: 50%;
@@ -66,6 +68,13 @@ body {
   font-weight: 600;
 }
 
+.steps__details--item:hover {
+  background-color: #F5EDFF;
+}
+.steps__details--item:hover i {
+  color: #9356DC;
+}
+
 .header {
   border-bottom: 1px solid #ced4da;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -80,22 +89,20 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .header__links i {
   font-size: 20px;
-  padding-left: 10px;
+  position: absolute;
+  left: 20px;
 }
-.header__links img {
-  padding-left: 50px;
-}
-.header__logo {
+.header__links__logo {
   width: 60%;
   height: 60%;
 }
 
 @media screen and (min-width: 767px) {
   .header__links img {
-    padding-left: 133px;
     width: 30%;
   }
   .form-menu__order {
