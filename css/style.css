@@ -265,6 +265,12 @@ body {
   font-size: 24px;
   font-weight: 700;
 }
+.restaurant__container {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 .restaurant__items {
   display: flex;
   flex-direction: column;
@@ -334,6 +340,11 @@ body {
   .steps h2 {
     padding: 40px;
   }
+  .restaurant__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 20px;
+  }
 }
 .banner img {
   height: 245px;
@@ -391,8 +402,9 @@ body {
     gap: 20px;
     justify-content: flex-start;
   }
-  .starter, .main-course, .dessert {
-    width: 50%;
+  .menu__container {
+    width: 80%;
+    margin: auto;
   }
 }
 

@@ -44,6 +44,13 @@
         @include h2;
     }
 
+    &__container {
+        gap: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+
     &__items {
         display: flex;
         flex-direction: column;
@@ -84,6 +91,7 @@
     }
 }
 
+
 @media screen and (min-width: map-get($breakpoints, tablette)) {
 .steps {
     flex-direction: row;
@@ -106,5 +114,11 @@
     & h2 {
         padding: 40px;
     }
+}
+
+.restaurant__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 20px;
 }
 }
