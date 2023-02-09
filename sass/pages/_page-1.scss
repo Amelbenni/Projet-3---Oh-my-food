@@ -49,8 +49,10 @@
     gap: 20px;
     justify-content: flex-start;
 }
-   
-    .starter, .main-course, .dessert {
-    width: 50%;
+
+    .menu__container {
+        width: 80%;
+        margin: auto;
     }
+    
 }
