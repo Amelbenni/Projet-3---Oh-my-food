@@ -89,22 +89,20 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .header__links i {
   font-size: 20px;
-  padding-left: 10px;
+  position: absolute;
+  left: 20px;
 }
-.header__links img {
-  padding-left: 50px;
-}
-.header__logo {
+.header__links__logo {
   width: 60%;
   height: 60%;
 }
 
 @media screen and (min-width: 767px) {
   .header__links img {
-    padding-left: 133px;
     width: 30%;
   }
   .form-menu__order {
