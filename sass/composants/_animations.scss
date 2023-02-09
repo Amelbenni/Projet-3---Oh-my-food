@@ -1,0 +1,7 @@
+.steps__details--item:hover {
+    background-color: #F5EDFF;
+
+    & i {
+        color: $primary-color;
+    }
+}

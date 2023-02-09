@@ -68,6 +68,13 @@ body {
   font-weight: 600;
 }
 
+.steps__details--item:hover {
+  background-color: #F5EDFF;
+}
+.steps__details--item:hover i {
+  color: #9356DC;
+}
+
 .header {
   border-bottom: 1px solid #ced4da;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
