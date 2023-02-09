@@ -13,6 +13,7 @@ body {
   font-size: 17px;
   border: none;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 3px 8px;
   background: rgb(255, 121, 218);
   background: linear-gradient(169deg, rgb(255, 121, 218) 29%, rgb(147, 86, 220) 76%);
   margin: 15px 0 60px 0;
@@ -26,6 +27,7 @@ body {
   font-size: 17px;
   border: none;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 3px 8px;
   background: rgb(255, 121, 218);
   background: linear-gradient(169deg, rgb(255, 121, 218) 29%, rgb(147, 86, 220) 76%);
   width: 50%;
