@@ -1,4 +1,10 @@
 .form__title--submit {
     @include button;
     margin: 15px 0 60px 0;
+    width: 75%;
+ }
+
+ .form-menu__order {
+    @include button;
+    width: 50%;
  }

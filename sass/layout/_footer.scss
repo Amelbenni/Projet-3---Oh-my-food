@@ -29,3 +29,12 @@
         }
     }
 }
+
+@media screen and (min-width: map-get($breakpoints, tablette)) {
+    .footer img {
+        width: 20%;
+    }
+    .footer__link__item i {
+        width: 3%;
+    }
+}

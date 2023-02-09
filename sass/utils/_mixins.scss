@@ -1,6 +1,5 @@
 @mixin button {
     border-radius: 30px;
-    width: 75%;
     padding: 15px;
     font-family: $main-font;
     font-size: 17px;
@@ -33,7 +32,7 @@
 @mixin step-item {
     display: flex;
     align-items: center;
-    border: 1px solid white;
+    border: 1px solid #F7F7F7;
     border-radius: 20px;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     margin-bottom: 20px;
@@ -55,7 +54,7 @@
 }
 
 @mixin restaurant-card {
-    border: 1px solid #cecece;
+    border: 1px solid #FFFFFF;
     box-shadow: rgb(0 0 0 / 13%) 0px 3px 8px;
     border-radius: 20px;
 }
@@ -68,7 +67,7 @@
 
 @mixin new-restaurant {
     position: absolute;
-    right: 37px;
+    right: 5px;
     margin: 10px 5px;
     background-color: #99E2D0;
     color: #008766;
@@ -76,4 +75,52 @@
     font-size: 13px;
     font-weight: 600;
     padding: 5px;
+}
+
+@mixin banner-restaurant {
+    height: 245px;
+    object-fit: cover;
+    width: 100%;
+}
+
+@mixin title-restaurant {
+    font-family: "Shrikhand", cursive;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@mixin card-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #FFFFFF;
+    box-shadow: rgb(0 0 0 / 13%) 0px 3px 8px;
+}
+
+@mixin h4-card {
+    font-family: $main-font;
+    font-size: 15px;
+}
+
+@mixin p-card {
+    font-family: $main-font;
+    font-size: 13px;
+}
+
+@mixin menu-title {
+    font-family: $main-font;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+@mixin Title-decoration {
+    background-color: $tertiary-color;
+    height: 3px;
+    width: 37px;
 }
