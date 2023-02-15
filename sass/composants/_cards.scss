@@ -1,3 +1,14 @@
+.starter-menu__container, .main-course-menu__container, .dessert-menu__container  {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+    margin: 10px;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
 .starter-menu__items, .main-course-menu__items, .dessert-menu__items {
     @include card-menu;
 

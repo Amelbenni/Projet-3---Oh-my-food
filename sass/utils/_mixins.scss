@@ -7,7 +7,7 @@
     color: white;
     box-shadow: rgb(0 0 0 / 13%) 0px 3px 8px;
     background: rgb(255,121,218);
-    background: linear-gradient(169deg, rgba(255,121,218,1) 29%, rgba(147,86,220,1) 76%);
+    background: $gradient;
 }
 
 @mixin h2 {
@@ -95,9 +95,8 @@
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
-    border: 1px solid #FFFFFF;
+    border: 1px solid none;
     border-radius: 20px;
-    padding: 10px;
     margin: 10px;
     background-color: #FFFFFF;
     box-shadow: rgb(0 0 0 / 13%) 0px 3px 8px;
