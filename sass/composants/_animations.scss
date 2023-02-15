@@ -43,12 +43,25 @@
 .starter-menu__items .add, .main-course-menu__items .add, .dessert-menu__items .add  {
     visibility: hidden;
     width: 0%;
-
 }
 
 .starter-menu__items:active .add, .main-course-menu__items:active .add, .dessert-menu__items:active .add {
     visibility: visible;
     width: 20%;
+    transition-duration: 0.5s;
+    &.add i{
+        animation: add 1s both;
+    }
+}
+
+@keyframes add {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .add {
