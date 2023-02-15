@@ -2,9 +2,58 @@
     @include button;
     margin: 15px 0 60px 0;
     width: 75%;
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+      &::after {
+         opacity: 0.3;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 30px;
+        box-shadow: rgb(0 0 0 / 53%) 0px 3px 8px;
+        background: rgb(255,121,218);
+      background-color: radial-gradient(169deg, lighten(rgba(255,121,218,1), 5) 29%, lighten(rgba(147,86,220,1),5) 76%);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 250ms;
+   }
+    
  }
 
  .form-menu__order {
     @include button;
     width: 50%;
+    position: relative;
+    z-index: 1;
+    
+    &:hover {
+      &::after {
+         opacity: 0.3;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 30px;
+        box-shadow: rgb(0 0 0 / 53%) 0px 3px 8px;
+        background: rgb(255,121,218);
+      background-color: radial-gradient(169deg, lighten(rgba(255,121,218,1), 5) 29%, lighten(rgba(147,86,220,1),5) 76%);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 250ms;
+   }
  }
