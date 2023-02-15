@@ -162,8 +162,20 @@ body {
 .starter-menu__items:active .add, .main-course-menu__items:active .add, .dessert-menu__items:active .add {
   visibility: visible;
   width: 20%;
+  transition-duration: 0.5s;
+}
+.starter-menu__items:active .add.add i, .main-course-menu__items:active .add.add i, .dessert-menu__items:active .add.add i {
+  animation: add 1s both;
 }
 
+@keyframes add {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .add {
   display: flex;
   flex-direction: row;
@@ -245,6 +257,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .header__links i {
   font-size: 20px;
