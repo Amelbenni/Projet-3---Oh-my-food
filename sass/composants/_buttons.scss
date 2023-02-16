@@ -4,6 +4,7 @@
     width: 75%;
     position: relative;
     z-index: 1;
+    cursor: pointer;
 
     &:hover {
       &::after {
@@ -34,6 +35,7 @@
     width: 50%;
     position: relative;
     z-index: 1;
+    cursor: pointer;
     
     &:hover {
       &::after {

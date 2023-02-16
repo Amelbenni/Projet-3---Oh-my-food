@@ -20,6 +20,7 @@ body {
   width: 75%;
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 .form__title--submit:hover::after {
   opacity: 0.3;
@@ -53,6 +54,7 @@ body {
   width: 50%;
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 .form-menu__order:hover::after {
   opacity: 0.3;
@@ -159,12 +161,12 @@ body {
   width: 0%;
 }
 
-.starter-menu__items:active .add, .main-course-menu__items:active .add, .dessert-menu__items:active .add {
+.starter-menu__items:active .add, .main-course-menu__items:active .add, .dessert-menu__items:active .add, .starter-menu__items:hover .add, .main-course-menu__items:hover .add, .dessert-menu__items:hover .add {
   visibility: visible;
   width: 20%;
   transition-duration: 0.5s;
 }
-.starter-menu__items:active .add.add i, .main-course-menu__items:active .add.add i, .dessert-menu__items:active .add.add i {
+.starter-menu__items:active .add.add i, .main-course-menu__items:active .add.add i, .dessert-menu__items:active .add.add i, .starter-menu__items:hover .add.add i, .main-course-menu__items:hover .add.add i, .dessert-menu__items:hover .add.add i {
   animation: add 1s both;
 }
 
@@ -198,6 +200,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
+  max-width: 1400px;
   animation: lds-hide 3s both;
 }
 
@@ -369,6 +372,11 @@ body {
     width: 45%;
   }
 }
+@media screen and (min-width: 991px) {
+  .form__research--input {
+    width: 13%;
+  }
+}
 .steps {
   display: flex;
   flex-direction: column;
@@ -490,24 +498,33 @@ body {
 
 @media screen and (min-width: 767px) {
   .steps {
-    flex-direction: row;
-    align-items: baseline;
-  }
-  .restaurant {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .restaurant__items {
+  .steps h2 {
+    padding: 20px;
+  }
+  .steps__details--item p {
+    padding: 5px;
+  }
+  .steps-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
     width: 100%;
+    justify-content: center;
   }
 }
+.restaurant {
+  flex-direction: column;
+  align-items: center;
+}
+.restaurant__items {
+  width: 100%;
+}
+
 @media screen and (min-width: 991px) {
-  .steps {
-    gap: 40px;
-  }
-  .steps h2 {
-    padding: 40px;
-  }
   .restaurant__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -543,6 +560,10 @@ body {
   padding: 10px 0;
 }
 
+.starter-menu__items, .main-course-menu__items, .dessert-menu__items {
+  cursor: pointer;
+}
+
 .starter-menu__title, .dessert-menu__title {
   padding-left: 10px;
 }
@@ -565,6 +586,12 @@ body {
   width: 37px;
 }
 
+@media screen and (min-width: 767px) {
+  .starter, .main-course, .dessert {
+    width: 80%;
+    margin: auto;
+  }
+}
 @media screen and (min-width: 991px) {
   .menu__title {
     gap: 20px;

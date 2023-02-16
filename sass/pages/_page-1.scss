@@ -26,6 +26,9 @@
 .starter, .main-course, .dessert {
     padding: 10px 0;
 }
+.starter-menu__items, .main-course-menu__items, .dessert-menu__items {
+    cursor: pointer;
+}
 
 .starter-menu__title, .dessert-menu__title {
     padding-left: 10px;
@@ -44,6 +47,12 @@
     @include Title-decoration;
 }
 
+@media screen and (min-width: map-get($breakpoints, tablette)) {
+    .starter, .main-course, .dessert {
+        width: 80%;
+        margin: auto;
+    }
+}
 
 @media screen and (min-width: map-get($breakpoints, desktop)) {
    .menu__title {
