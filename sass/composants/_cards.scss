@@ -1,20 +1,24 @@
-.starter-menu__container, .main-course-menu__container, .dessert-menu__container  {
+.starter-menu__container,
+.main-course-menu__container,
+.dessert-menu__container {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
-    
     margin: 10px;
-    background-color: #FFFFFF;
+    background-color: $background-card;
     width: 100%;
 }
 
-.starter-menu__items, .main-course-menu__items, .dessert-menu__items {
+.starter-menu__items,
+.main-course-menu__items,
+.dessert-menu__items {
     @include card-menu;
 
     &--titles {
         display: flex;
         flex-direction: column;
+        width: 100%;
 
         & p {
             margin: 0;
@@ -29,7 +33,7 @@
         }
     }
 
-    &--prices p{
+    &--prices p {
         margin: 0;
         padding: 5px 0;
         font-family: $main-font;
