@@ -68,7 +68,7 @@
 @media screen and (min-width: map-get($breakpoints, desktop)) {
     .menu__title {
         gap: 20px;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .menu__container {
