@@ -6,7 +6,7 @@
     border: none;
     color: white;
     box-shadow: rgb(0 0 0 / 13%) 0px 3px 8px;
-    background: rgb(255,121,218);
+    background: $background-btn;
     background: $gradient;
 }
 
@@ -17,12 +17,12 @@
 }
 
 @mixin step-number {
-    background: #9356DC;
+    background: $primary-color;
     border-radius: 50%;
     width: 22px;
     height: 22px;
     text-align: center;
-    color: white;
+    color: $text-footer-color;
     font-size: 16px;
     font-family: $main-font;
     padding: 2px;
@@ -33,16 +33,16 @@
 @mixin step-item {
     display: flex;
     align-items: center;
-    border: 1px solid #F7F7F7;
+    border: 1px solid $background-menu;
     border-radius: 20px;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     margin-bottom: 20px;
     width: 90%;
-    font-family: 'Roboto';
+    font-family: $main-font;
     font-weight: 600;
     font-size: 16px;
     padding: 5px 10px;
-    background-color: #F7F7F7;
+    background-color: $background-menu;
 }
 
 @mixin restaurant-container {
@@ -50,12 +50,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #FFFFFF;
+    background-color: $background-card;
     border-radius: 20px;
 }
 
 @mixin restaurant-card {
-    border: 1px solid #FFFFFF;
+    border: 1px solid none;
     box-shadow: rgb(0 0 0 / 13%) 0px 3px 8px;
     border-radius: 20px;
 }
@@ -70,8 +70,8 @@
     position: absolute;
     right: 5px;
     margin: 10px 5px;
-    background-color: #99E2D0;
-    color: #008766;
+    background-color: $background-color-new;
+    color: $text-color-new;
     font-family: $main-font;
     font-size: 13px;
     font-weight: 600;
@@ -85,7 +85,7 @@
 }
 
 @mixin title-restaurant {
-    font-family: "Shrikhand", cursive;
+    font-family: $title-font;
     font-size: 16px;
     font-weight: 400;
 }
@@ -98,7 +98,7 @@
     border: 1px solid none;
     border-radius: 20px;
     margin: 10px;
-    background-color: #FFFFFF;
+    background-color: $background-card;
     box-shadow: rgb(0 0 0 / 13%) 0px 3px 8px;
 }
 
@@ -110,6 +110,10 @@
 @mixin p-card {
     font-family: $main-font;
     font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
 }
 
 @mixin menu-title {

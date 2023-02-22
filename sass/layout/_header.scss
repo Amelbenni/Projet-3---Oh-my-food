@@ -1,5 +1,5 @@
 .header {
-    border-bottom: 1px solid #ced4da ;
+    border-bottom: 1px solid #ced4da;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     justify-content: center;
@@ -7,7 +7,7 @@
 
     &__links {
         text-decoration: none;
-        color: black;
+        color: $text-color;
         width: 100%;
         height: 100%;
         display: flex;
@@ -21,19 +21,19 @@
             left: 20px;
         }
 
-    &__logo {
-        width: 60%;
-        height: 60%; 
+        &__logo {
+            width: 60%;
+            height: 60%;
+        }
     }
-}
 }
 
 @media screen and (min-width: map-get($breakpoints, tablette)) {
-.header__links img {
-    width: 30%;
-}
+    .header__links img {
+        width: 30%;
+    }
 
-.form-menu__order {
-    width: 25%;
-}
+    .form-menu__order {
+        width: 25%;
+    }
 }
